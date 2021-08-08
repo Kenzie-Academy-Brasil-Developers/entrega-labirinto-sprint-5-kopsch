@@ -43,13 +43,13 @@ body {
     background: url("src/left-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
-    transition: .4s;
+    transition: 1s;
     
 }
 
 .left-menu--hidden {
     transform: translateX(-100%);
-    transition: .4s;
+    transition: 1s;
 }
 
 .sayori-sprite {
@@ -61,12 +61,12 @@ body {
     background: url("src/sayori-sprite.png");
     background-repeat: no-repeat;
     background-size: contain;
-    transition: .4s;
+    transition: 1s;
 }
 
 .sayori-sprite--hidden {
     transform: translateY(200%);
-    transition: .4s;
+    transition: 1s;
 }
 
 .loading {
