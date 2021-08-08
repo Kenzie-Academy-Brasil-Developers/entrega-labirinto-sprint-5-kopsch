@@ -99,7 +99,7 @@ body {
     position: absolute;
     top: 10vh;
     left: 15vw;
-    background: url("src/scenario.png");
+    background: url(src/cenario.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 80vw;
