@@ -98,7 +98,7 @@ body {
 .cutscene-begin {
     position: absolute;
     top: 10vh;
-    left: 15vw;
+    left: 14vw;
     background-image: url("./src/Cenario.PNG");
     background-size: contain;
     background-repeat: no-repeat;
