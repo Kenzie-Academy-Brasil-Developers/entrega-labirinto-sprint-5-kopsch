@@ -88,7 +88,7 @@ body {
     position: absolute;
     left: 33.5vw;
     top: 25vh;
-    background: url("src/logo-menu.png");
+    background-image: url("src/logo-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
     width:500px;
@@ -99,7 +99,7 @@ body {
     position: absolute;
     top: 10vh;
     left: 15vw;
-    background: url(src/cenario.png);
+    background-image: url("./src/cenario.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 80vw;
