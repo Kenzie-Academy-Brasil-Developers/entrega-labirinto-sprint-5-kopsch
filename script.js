@@ -1,4 +1,4 @@
-let menuSong = new Audio("/src/doki-theme.mp3")
+let menuSong = new Audio("./src/doki-theme.mp3")
     menuSong.addEventListener('ended', function() {
         this.currentTime = 0;
         this.play();
