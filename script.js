@@ -181,8 +181,7 @@ document.addEventListener('keydown', (e) => {
     }
 })
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape") {
-        location.reload()
-    }
+let restartGame = document.querySelector(".restart-maze")
+restartGame.addEventListener('click', () => {
+    location.reload()
 })

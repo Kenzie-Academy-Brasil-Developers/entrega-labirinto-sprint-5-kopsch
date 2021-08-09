@@ -167,6 +167,7 @@ body {
     position: absolute;
     right: 0.5vw;
     bottom: 0.2vw;
+    cursor: pointer;
 }
 
 .cutscene-end--hidden {
@@ -227,6 +228,7 @@ body {
     left: 0;
     top:450px;
     margin-top: 3px;
+    transition: .4s;
 }
 
 .mc {
