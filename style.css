@@ -37,7 +37,7 @@ body {
 
 .left-menu {
     position: absolute;
-    width: 450px;
+    width: 50vw;
     height: 100vh;
     max-height: 105vh;
     background: url("src/left-menu.png");
