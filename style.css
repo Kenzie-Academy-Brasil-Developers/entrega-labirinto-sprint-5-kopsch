@@ -17,7 +17,10 @@
 body {
     background: url("src/texture.png");
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
+
 
 .start-game {
     position:absolute;
@@ -39,7 +42,6 @@ body {
     position: absolute;
     width: 50vw;
     height: 100vh;
-    max-height: 105vh;
     background: url("src/left-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -54,10 +56,10 @@ body {
 
 .sayori-sprite {
     position: absolute;
-    transform: translateY(7%);
+    transform: translateY(20%);
     left: 50vw;
-    width: 260px;
-    height: 700px;
+    width: 20vw;
+    height:70vh;
     background: url("src/sayori-sprite.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -97,25 +99,30 @@ body {
 
 .cutscene-begin {
     position: absolute;
-    top: 10vh;
-    left: 14vw;
     background-image: url("./src/Cenario.PNG");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 80vw;
-    height: 80vh;
+    width: 1065px;
+    height: 600px;
     transition: 1s;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 .cutscene-begin__text-box {
     position: absolute;
-    bottom: 0.5vw;
-    left: 9vw;
+    left: 50%; 
+    bottom:0;
+    transform:translateX(-50%); 
+    bottom: 30px;
     background: url("src/text-box.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 53vw;
-    height: 200px;
+    width: 854px;
+    height: 204px;
 }
 
 .start-maze {
@@ -124,8 +131,8 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--border-color);
     position: absolute;
-    right: 2.5vw;
-    bottom: 1vw;
+    right: 70px;
+    bottom: 20px;
 }
 
 .cutscene-begin--hidden {
@@ -135,14 +142,15 @@ body {
 }
 
 .cutscene-end {
-    top: 20vh;
-    left: 34vw;
+    left:50%; 
+    top: 50%;
+    transform:translate(-50%, -50%); 
     position: absolute;
     background: url("src/end.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 30vw;
-    height: 59vh;
+    width:500px;
+    height: 500px;
     opacity: 1;
     transition: .2s;
     z-index: 20;
@@ -150,8 +158,9 @@ body {
 
 .cutscene-end__text {
     position: absolute;
-    bottom: 3vh;
-    left: 5vw;
+    bottom: 2.5vh;
+    left: 40%; 
+    transform:translateX(-50%); 
     font-family: Riffic;
     color: var(--white);
     -webkit-text-stroke-width: 1px;
@@ -159,14 +168,14 @@ body {
 }
 
 .restart-maze {
-    font-size: 8pt;
+    font-size: 10pt;
     font-family: Riffic;
     color: var(--white);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--primary-color);
     position: absolute;
-    right: 0.5vw;
-    bottom: 0.2vw;
+    right: 5px;
+    bottom:5px;
     cursor: pointer;
 }
 
@@ -177,8 +186,9 @@ body {
 
 .maze {
     position: absolute;
-    top: 3vh;
-    left: 16vw;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
     opacity: 1;
     transition: 1s;
 }
@@ -196,29 +206,29 @@ body {
 .blank-cell {
     display: block;
     background: var(--space-cell);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .wall-cell {
     display: block;
     background: var(--wall-cell);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .begin-cell {
     display: block;
     background: var(--begin-cell);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .end-cell {
     display: block;
     background: var(--end-cell);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .sayori {
@@ -226,7 +236,7 @@ body {
     width: 45px;
     cursor: pointer;
     left: 0;
-    top:450px;
+    top:350px;
     margin-top: 3px;
     transition: .4s;
 }

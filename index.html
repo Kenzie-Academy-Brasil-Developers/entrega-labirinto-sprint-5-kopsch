@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sayori's Adventure</title>
-    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="left-menu left-menu--hidden" id="left-menu">
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="left-menu left-menu--hidden" id="left-menu">
         <span class="start-game">Start</span>
-    </div>
-    <div class="sayori-sprite sayori-sprite--hidden" id="sayori-sprite"></div>
+      </div>
+      <div class="sayori-sprite sayori-sprite--hidden" id="sayori-sprite"></div>
 
-    <div class="loading loading--hidden" id="loading">
+      <div class="loading loading--hidden" id="loading">
         <div class="loading__logo"></div>
-    </div>
+      </div>
 
-    <div class="cutscene-begin cutscene-begin--hidden" id="cutscene-begin">
-        <div class="cutscene-begin__text-box"><span class="start-maze">Press Enter to Continue</span></div>
-    </div>
+      <div class="cutscene-begin cutscene-begin--hidden" id="cutscene-begin">
+        <div class="cutscene-begin__text-box">
+          <span class="start-maze">Press Enter to Continue</span>
+        </div>
+      </div>
 
-    <div class="cutscene-end cutscene-end--hidden" id="cutscene-end">
-        <span class="cutscene-end__text">Parabéns, você deixou Sayori feliz. :)</span>
+      <div class="cutscene-end cutscene-end--hidden" id="cutscene-end">
+        <span class="cutscene-end__text"
+          >Parabéns, você deixou Sayori feliz. :)</span
+        >
         <span class="restart-maze">Press here to Restart</span>
-    </div>
-    
-    
-    <div id="labirinto" class="maze maze--hidden"></div>
+      </div>
+
+      <div id="labirinto" class="maze maze--hidden"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -97,11 +97,11 @@ const makeMaze = () => {
 }
 
 const movePlayer = {
-    topPosition: 450,
+    topPosition: 350,
     leftPosition: 0,
     ArrowUp: function () {
         if (map[mazeRow - 1][mazeColumn] === " ") {
-        this.topPosition -= 50
+        this.topPosition -= 40
         document.querySelector(".sayori").style.top = `${this.topPosition}px`
         mazeRow--
         }
@@ -109,7 +109,7 @@ const movePlayer = {
     },
     ArrowDown: function () {
         if (map[mazeRow + 1][mazeColumn] === " ") {
-        this.topPosition += 50
+        this.topPosition += 40
         document.querySelector(".sayori").style.top = `${this.topPosition}px`
         mazeRow++
         }
@@ -117,7 +117,7 @@ const movePlayer = {
     },
     ArrowRight: function () {
         if (map[mazeRow][mazeColumn + 1] === " " || map[mazeRow][mazeColumn + 1] === "F") {
-        this.leftPosition += 50
+        this.leftPosition += 40
         document.querySelector(".sayori").style.left = `${this.leftPosition}px`
         mazeColumn++
         }
@@ -125,7 +125,7 @@ const movePlayer = {
     },
     ArrowLeft: function () {
         if (map[mazeRow][mazeColumn - 1] === " ") {
-        this.leftPosition -= 50
+        this.leftPosition -= 40
         document.querySelector(".sayori").style.left = `${this.leftPosition}px`
         mazeColumn--
         }
