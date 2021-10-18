@@ -88,8 +88,9 @@ body {
 
 .loading__logo {
     position: absolute;
-    left: 33.5vw;
-    top: 25vh;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
     background-image: url("src/logo-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
